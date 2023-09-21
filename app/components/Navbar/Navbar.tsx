@@ -49,7 +49,7 @@ const Navbar = (props: Props) => {
           boxShadow: 'none',
         }}
       >
-      <Container maxWidth="xl">
+      <Container>
         <Toolbar disableGutters> 
         
         <Box 
@@ -112,7 +112,7 @@ const Navbar = (props: Props) => {
               <Button
                 key={page}
                 sx={{
-                  mx: 5,
+                  mx: 4,
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: 400,

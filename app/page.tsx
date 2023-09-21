@@ -3,6 +3,7 @@ import { Box, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
+import { PrimaryButton } from './components/Buttons';
 
 const styles = {
   detailsTitle: {
@@ -31,7 +32,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Home() {
   return (
     <main>
-      <Container maxWidth="xl">
+      <Container>
         {/* Hero */}
         <Box>
           <Typography
@@ -168,7 +169,7 @@ export default function Home() {
       {/* images section */}
         <Box
           sx={{
-            mt: '60px',
+            my: '60px',
           }}
         >
           <Box 
@@ -216,9 +217,9 @@ export default function Home() {
           />
 
           <Box 
-          sx={{ 
-            flexGrow: 1,
-          }}
+            sx={{ 
+              flexGrow: 1,
+            }}
           >
           <Grid container spacing={4}>
             <Grid xs={6}>
@@ -249,6 +250,76 @@ export default function Home() {
           </Box>
         </Box>
       </Container>
+
+      <Box
+        sx={{
+          background: '#2C3878',
+        }}
+      >
+        <Container>
+          <Box 
+            sx={{ 
+              flexGrow: 1,
+            }}
+          >
+          <Grid container spacing={2}>
+            <Grid xs={7}>
+              <Item sx={{background: '#2C3878'}}>
+                <Typography
+                    sx={{
+                      my: '30px',
+                      color: '#fff',
+                      fontSize: '36px',
+                      fontStyle: 'normal',
+                      fontWeight: 600,
+                      lineHeight: '170%',
+                      width: '613px',
+                    }}
+                  >
+                    let&apos;s discuss making your interior like a dream place!
+                  </Typography>
+              </Item>
+            </Grid>
+            <Grid xs={5}>
+              <Item sx={{background: '#2C3878'}}>
+                  <Typography
+                    sx={{
+                      my: '30px',
+                      color: '#fff',
+                      fontSize: '18px',
+                      fontStyle: 'normal',
+                      fontWeight: 400,
+                      lineHeight: '160%',
+                      width: '432px',
+                    }}
+                  >
+                    Contact us below to work together to build your amazing interior
+                  </Typography>
+                  <PrimaryButton
+                    sx={{
+                      height: '49px',
+                      width: '142px',
+                      fontSize: '14px',
+                      fontStyle: 'normal',
+                      fontWeight: 500,
+                      lineHeight: 'normal',
+                      color: '#2C3878',
+                      background: '#ffffff',
+                      borderRadius: '0px',
+                      '&:hover': {
+                        backgroundColor: '#ffffff',
+                      },
+                    }}
+                  >
+                    Contact Us
+                  </PrimaryButton>
+              </Item>
+            </Grid>
+          </Grid>
+          </Box>
+        </Container>
+      </Box>
+
     </main>
   )
 }
