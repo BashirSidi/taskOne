@@ -7,10 +7,9 @@ import {
 } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { NextAppDirEmotionCacheProvider } from "./EmotionCache";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-
-const roboto = Roboto({
+const poppins = Poppins({
   weight: ["300", "400", "500", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -36,7 +35,7 @@ const themeOptions: ThemeOptions = {
   },
   typography: {
     fontSize: 12,
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: poppins.style.fontFamily,
   }
 }
 

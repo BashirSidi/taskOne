@@ -1,0 +1,1 @@
+export const NAV_LINKS = ['Home', 'About Us', 'Services', 'Our Teams'];
