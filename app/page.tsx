@@ -4,8 +4,28 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
+const styles = {
+  detailsTitle: {
+    fontSize: '24px',
+    fontStyle: 'normal',
+    fontWeight: 600,
+    lineHeight: '140%',
+    color: '#333',
+    mb: '30px',
+  },
+  detailsContents: {
+    color: '#9C9C9C',
+    width: '584px',
+    fontSize: '18px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '160%',
+  }
+}
+
 const Item = styled(Paper)(({ theme }) => ({
-  // textAlign: 'center',
+  border: 'none',
+  boxShadow: 'none',
 }));
 
 export default function Home() {
@@ -52,7 +72,6 @@ export default function Home() {
           sx={{ 
             width: '100%',
             height: { xs: '', md: '' },
-            display: { xs: 'flex', md: 'flex' },
             mb: { xs: '16px', md: '60px' },
           }}
         />
@@ -69,17 +88,166 @@ export default function Home() {
           flexGrow: 1,
         }}
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={4}>
             <Grid xs={6}>
-              <Item>xs=6</Item>
+              <Item>
+                  <Typography
+                    sx={{
+                      ...styles.detailsTitle
+                    }}
+                  >
+                    Project Overview
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      ...styles.detailsContents,
+                      mb: '60px',
+                    }}
+                  >
+                    Online learning with us does not interfere with your daily life.
+                    because learning can be done anytime and anywhere. Online learning
+                    with us does not interfere with your daily life. because learning can be
+                    done anytime and anywhere. Online learning with us does not interfere with
+                    your daily life. because learning can be done anytime and anywhere.
+                  </Typography>
+                  <Typography
+                    sx={{
+                      ...styles.detailsContents,
+                    }}
+                  >
+                    July 22 - 2022
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    Interior Design - Furnitur
+                  </Typography>
+              </Item>
             </Grid>
             <Grid xs={6}>
-              <Item>xs=6</Item>
+              <Item>
+                  <Typography
+                    sx={{
+                      ...styles.detailsTitle
+                    }}
+                  >
+                    Design Process
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      ...styles.detailsContents,
+                      mb: '30px',
+                    }}
+                  >
+                    Online learning with us does not interfere with your daily life.
+                    because learning can be done anytime and anywhere. Online learning
+                    with us does not interfere with your daily life. because learning
+                    can be done anytime and anywhere.
+                  </Typography>
+                  <Typography
+                    sx={{
+                      ...styles.detailsContents
+                    }}
+                  >
+                    Online learning with us does not interfere with your daily life.
+                    because learning can be done anytime and anywhere. Online learning
+                    with us does not interfere with your daily life. because learning can
+                    be done anytime and anywhere.
+                  </Typography>
+              </Item>
             </Grid>
           </Grid>
         </Box>
       </Box>
+        
 
+      {/* images section */}
+        <Box
+          sx={{
+            mt: '60px',
+          }}
+        >
+          <Box 
+          sx={{ 
+            flexGrow: 1,
+          }}
+          >
+          <Grid container spacing={4}>
+            <Grid xs={6}>
+              <Item>
+                <Box 
+                  component='img'
+                  src="/images/cardImg1.svg" 
+                  alt="card image one"
+                  sx={{ 
+                    width: '100%',
+                  }}
+                />
+              </Item>
+            </Grid>
+            <Grid xs={6}>
+              <Item>
+                  <Box 
+                    component='img'
+                    src="/images/cardImg2.svg" 
+                    alt="card image one"
+                    sx={{ 
+                      width: '100%',
+                    }}
+                  />
+              </Item>
+            </Grid>
+          </Grid>
+          </Box>
+          
+          <Box 
+            component='img'
+            src="/images/largeImageTwo.svg" 
+            alt="product image one"
+            sx={{ 
+              width: '100%',
+              mt: '30px',
+              mb: { xs: '30px', md: '30px' },
+            }}
+          />
+
+          <Box 
+          sx={{ 
+            flexGrow: 1,
+          }}
+          >
+          <Grid container spacing={4}>
+            <Grid xs={6}>
+              <Item>
+                <Box 
+                  component='img'
+                  src="/images/cardImg3.svg" 
+                  alt="card image one"
+                  sx={{ 
+                    width: '100%',
+                  }}
+                />
+              </Item>
+            </Grid>
+            <Grid xs={6}>
+              <Item>
+                  <Box 
+                    component='img'
+                    src="/images/cardImg4.svg" 
+                    alt="card image one"
+                    sx={{ 
+                      width: '100%',
+                    }}
+                  />
+              </Item>
+            </Grid>
+          </Grid>
+          </Box>
+        </Box>
       </Container>
     </main>
   )
