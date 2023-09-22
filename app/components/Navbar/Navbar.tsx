@@ -21,21 +21,13 @@ type Props = {}
 
 const Navbar = (props: Props) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -100,6 +92,23 @@ const Navbar = (props: Props) => {
                 </MenuItem>
               ))}
             </Menu>
+            <PrimaryButton
+              sx={{
+                ml: 'auto',
+                width: '120px',
+                fontSize: '12px',
+                fontStyle: 'normal',
+                fontWeight: 500,
+                lineHeight: 'normal',
+                color: '#ffffff',
+                borderRadius: '0px',
+                '&:hover': {
+                  backgroundColor: '#2C3878',
+                },
+              }}
+            >
+              Contact Us
+            </PrimaryButton>
           </Box>
 
           {/* desktop navs */}

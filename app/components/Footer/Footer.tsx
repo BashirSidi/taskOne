@@ -18,7 +18,8 @@ export default function Footer() {
       component="footer"
       sx={{
         backgroundColor: '#fff',
-        p: 6,
+        p: {xs: 2, md: 6},
+        mb: '20px',
       }}
     >
       
@@ -26,11 +27,26 @@ export default function Footer() {
         <Grid container>
           <Grid item xs={12} md={7}>
             <Box>
+            <Box 
+              component='img'
+              src="/images/footerLogo.svg" 
+              alt="Brand Logo"
+              sx={{ 
+                width: '126px',
+                display: 'flex',
+                mx: { xs: 'auto', md: '0' },
+                '&:hover': {
+                  cursor: 'pointer',
+                }, 
+              }}
+            />
               <Box sx={{
                 width: {xs: '200px', md: '481px'},
+                mx: { xs: 'auto', md: '0' },
               }}>
                 <Typography
                   sx={{
+                    textAlign: {xs: 'center', md: 'left'},
                     fontWeight:  {xs: '500', md: '600'},
                     fontSize: {xs: '16px', md: '36px'},
                     lineHeight: { xs: '130%', md: '170%' },
@@ -47,18 +63,49 @@ export default function Footer() {
           <Grid item xs={12} md={5}>
             <Box>
               <Box>
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      mt: '30px',
+                    }}
+                  >
+                    <Box
+                      component='img'
+                      src="/images/fillCircle.svg"
+                      alt="fillCircle_logo"
+                      sx={{
+                        opacity: 'none !important',
+                        mr: '10px',
+                      }}
+                    />
+                      <Typography
+                        sx={{
+                          fontSize: {xs: '12px', md: '18px'},
+                          fontWeight: 400,
+                          // width: {xs: '100%', md: '100%'},
+                          fontStyle: 'normal',
+                        }}
+                      >
+                      Enter your email to get the laterst news
+                    </Typography>
+                  </Box>
+
                   <FormControl
                   sx={{
                     m: 1,
-                    marginTop: {xs: '0', md: '60px'},
                     color: '#000',
-                    width: {xs: '90%', md: '60%'} ,
+                    width: {xs: '100%', md: '440px'},
                   }}
                     variant="standard"
                   >
                     <InputLabel
                       sx={{
-                      color: '#000',
+                      color: '#D9D9D9',
+                      fontSize: {xs: '12px', md: '16px'},
+                      fontStyle: 'normal',
+                      fontWeight: 400,
+                      lineHeight: '160%',
                       opacity: '0.6000000238418579',
                       '&.Mui-focused': {
                         color: '#000', 
@@ -72,8 +119,8 @@ export default function Footer() {
                       id="standard-adornment-password"
                       type='text'
                       sx={{
-                        color: '#000',
-                        paddingY: '4px',
+                        color: '#141414',
+                        paddingY: {xs: '4px', md: '8px'},
                         borderBottom: '2px solid rgba(255, 255, 255, 0.15)',
                         // opacity: '0.6000000238418579',
                         // '&:focus': {
@@ -81,7 +128,7 @@ export default function Footer() {
                         // },
                         '&::after': {
                           transition: 'none',
-                          borderBottom: '0px solid #000',
+                          borderBottom: '0px solid #141414',
                         },
                       }}
                       endAdornment={
@@ -91,11 +138,12 @@ export default function Footer() {
                           >
                           <Box 
                             component='img'
-                            src="" 
+                            src="/images/inputArrow.svg" 
                             alt="icon"
                             sx={{ 
-                              color: '#000 !important',
+                              color: '#141414 !important',
                               opacity: 'none !important',
+                              pb: {xs: '12px', md: '26px'},
                             }}
                           />
                           </IconButton>
@@ -103,6 +151,84 @@ export default function Footer() {
                       }
                     />
                   </FormControl>
+                  
+                  <Box
+                    sx={{
+                      mt: '30px',
+                      marginLeft: {xs: '0', md: '50%'}
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontWeight: 400,
+                        fontSize: {xs: '12px', md: '16px'},
+                        lineHeight: '160%px',
+                        fontStyle: 'normal',
+                      }}
+                    >
+                      Follow us On
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        marginBottom: {xs: '16px', md: '0'},
+                        marginTop: {xs: '16px', md: '20px'}
+                      }}
+                    >
+                      <Box
+                          component='img'
+                          src="/images/facebook.svg"
+                          alt="facebook_logo"
+                          sx={{
+                            background: '#ccc',
+                            padding: '6px',
+                            borderRadius: '50%',
+                            color: '#fff !important',
+                            opacity: 'none !important',
+                            marginRight: '16px'
+                          }}
+                        />
+                      <Box
+                        component='img'
+                        src="/images/instagram.svg"
+                        alt="instagram_logo"
+                        sx={{
+                          background: '#ccc',
+                          padding: '6px',
+                          borderRadius: '50%',
+                          color: '#fff !important',
+                          opacity: 'none !important',
+                          marginRight: '16px'
+                        }}
+                      />
+                      <Box
+                        component='img'
+                        src="/images/tiktok.svg"
+                        alt="tiktok_logo"
+                        sx={{
+                          background: '#ccc',
+                          padding: '6px',
+                          borderRadius: '50%',
+                          color: '#fff !important',
+                          opacity: 'none !important',
+                        }}
+                      />
+                      <Box
+                        component='img'
+                        src="/images/youtube.svg"
+                        alt="youtube_logo"
+                        sx={{
+                          background: '#ccc',
+                          padding: '6px',
+                          borderRadius: '50%',
+                          color: '#fff !important',
+                          opacity: 'none !important',
+                        }}
+                      />
+                    </Box>
+                  </Box>
               </Box>
             </Box>
           </Grid>

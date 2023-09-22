@@ -7,17 +7,17 @@ import { PrimaryButton } from './components/Buttons';
 
 const styles = {
   detailsTitle: {
-    fontSize: '24px',
+    fontSize:{ xs: '16px', md: '24px' },
     fontStyle: 'normal',
     fontWeight: 600,
     lineHeight: '140%',
     color: '#333',
-    mb: '30px',
+    mb: { xs: '16px', md: '30px' },
   },
   detailsContents: {
     color: '#9C9C9C',
-    width: '584px',
-    fontSize: '18px',
+    width: { xs: '100%', md: '584px' },
+    fontSize: { xs: '14px', md: '18px' },
     fontStyle: 'normal',
     fontWeight: 400,
     lineHeight: '160%',
@@ -81,7 +81,7 @@ export default function Home() {
       {/* overview / process */}
       <Box
         sx={{
-          display: { xs: 'none', md: 'flex' },
+          display: { xs: 'flex', md: 'flex' },
         }}
       >
         <Box 
@@ -90,7 +90,7 @@ export default function Home() {
         }}
         >
           <Grid container spacing={4}>
-            <Grid xs={6}>
+            <Grid xs={12} md={6}>
               <Item>
                   <Typography
                     sx={{
@@ -128,7 +128,7 @@ export default function Home() {
                   </Typography>
               </Item>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={12} md={6}>
               <Item>
                   <Typography
                     sx={{
@@ -169,7 +169,7 @@ export default function Home() {
       {/* images section */}
         <Box
           sx={{
-            my: '60px',
+            my: { xs: '16px', md: '60px' },
           }}
         >
           <Box 
@@ -177,7 +177,7 @@ export default function Home() {
             flexGrow: 1,
           }}
           >
-          <Grid container spacing={4}>
+          <Grid container spacing={{ xs: 2, md: 4 }}>
             <Grid xs={6}>
               <Item>
                 <Box 
@@ -211,8 +211,8 @@ export default function Home() {
             alt="product image one"
             sx={{ 
               width: '100%',
-              mt: '30px',
-              mb: { xs: '30px', md: '30px' },
+              mt: { xs: '10px', md: '30px' },
+              mb: { xs: '10px', md: '30px' },
             }}
           />
 
@@ -221,7 +221,7 @@ export default function Home() {
               flexGrow: 1,
             }}
           >
-          <Grid container spacing={4}>
+          <Grid container spacing={{ xs: 2, md: 4 }}>
             <Grid xs={6}>
               <Item>
                 <Box 
@@ -263,57 +263,64 @@ export default function Home() {
             }}
           >
           <Grid container spacing={2}>
-            <Grid xs={7}>
+            <Grid xs={12} md={7}>
               <Item sx={{background: '#2C3878'}}>
                 <Typography
                     sx={{
                       my: '30px',
                       color: '#fff',
-                      fontSize: '36px',
+                      fontSize:{ xs: '20px', md: '36px' },
                       fontStyle: 'normal',
                       fontWeight: 600,
                       lineHeight: '170%',
-                      width: '613px',
+                      width: { xs: '100%', md: '613px' },
                     }}
                   >
                     let&apos;s discuss making your interior like a dream place!
                   </Typography>
               </Item>
             </Grid>
-            <Grid xs={5}>
+            <Grid xs={12} md={5}>
               <Item sx={{background: '#2C3878'}}>
                   <Typography
                     sx={{
-                      my: '30px',
+                      my: { xs: '0px', md: '30px' },
+                      mb: { xs: '30px', md: '30px' },
                       color: '#fff',
-                      fontSize: '18px',
+                      fontSize: { xs: '14px', md: '18px' },
                       fontStyle: 'normal',
                       fontWeight: 400,
                       lineHeight: '160%',
-                      width: '432px',
+                      width: { xs: '100%', md: '432px' },
                     }}
                   >
                     Contact us below to work together to build your amazing interior
                   </Typography>
-                  <PrimaryButton
+                  <Box
                     sx={{
-                      height: '49px',
-                      width: '142px',
-                      fontSize: '14px',
-                      fontStyle: 'normal',
-                      fontWeight: 500,
-                      lineHeight: 'normal',
-                      color: '#2C3878',
-                      background: '#ffffff',
-                      mb: '40px',
-                      borderRadius: '0px',
-                      '&:hover': {
-                        backgroundColor: '#ffffff',
-                      },
+                      textAlign: { xs: 'center', md: 'start' },
                     }}
                   >
-                    Contact Us
-                  </PrimaryButton>
+                    <PrimaryButton
+                      sx={{
+                        height: '49px',
+                        width: '142px',
+                        fontSize: '14px',
+                        fontStyle: 'normal',
+                        fontWeight: 500,
+                        lineHeight: 'normal',
+                        color: '#2C3878',
+                        background: '#ffffff',
+                        mb: '40px',
+                        borderRadius: '0px',
+                        '&:hover': {
+                          backgroundColor: '#ffffff',
+                        },
+                      }}
+                    >
+                      Contact Us
+                    </PrimaryButton>
+                  </Box>
               </Item>
             </Grid>
           </Grid>
