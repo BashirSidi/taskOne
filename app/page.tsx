@@ -305,6 +305,7 @@ export default function Home() {
                       lineHeight: 'normal',
                       color: '#2C3878',
                       background: '#ffffff',
+                      mb: '40px',
                       borderRadius: '0px',
                       '&:hover': {
                         backgroundColor: '#ffffff',
