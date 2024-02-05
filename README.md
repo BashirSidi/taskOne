@@ -1,17 +1,13 @@
-  <h1 align="center">Bashir Salisu Sidi <a href="https://www.cypressoft.com/" target="_blank">Cypress</a> Task #1 Practical Task</h1>
-    <p align="center">
+## About me
 
-## Description
+I am a highly skilled professional with proven expertise in project management, testing, and architecture. With a successful track record of implementations, I excel in leading
+and coordinating projects, ensuring timely delivery and adherence to quality standards. My proficiency lies in designing and implementing comprehensive testing strategies,
+guaranteeing the development of robust and reliable software solutions. I have extensive experience in architecting scalable and efficient systems that align with business
+objectives. I am adept at analyzing requirements, identifying technical challenges, and proposing effective solutions. Strong communication and collaboration skills enable me to
+excel in teamwork and stakeholder management. Alongside my project management abilities, I am a self-motivated individual capable of independently managing projects. I am wellversed in user interface design, testing, and debugging processes. My technical expertise encompasses a diverse range of technologies, including JavaScript, TypeScript, Python, Django, ReactJS, Vue, Next.js, CSS, Postgres, MySQL, Solidity, Ethers.js, Node.js, Nest.js, Redux, MobX, Agile Development, Solid Principles, RESTful API, GraphQL, Jest, CI/CD, Docker, and AWS. I adapt quickly to new technologies and frameworks and am committed to delivering high-quality code following best practices. I have collaborated within Agile development methodologies and am passionate about contributing to innovative projects that drive impactful results.
 
-This is the complete version of the task #1 of the practical test.
 
-## Hosted (Netlify Link)
-
-```bash
-$ https://superlative-brigadeiros-cd73be.netlify.app
-```
-
-## Keep in touch
+## Stay in touch
 
 - LinkedIn - [Bashir Salisu Sidi](https://www.linkedin.com/in/bashir-salisu-sidi-b12366124/)
 - Twitter - [@bashir_sidi](https://twitter.com/bashir_sidi)
